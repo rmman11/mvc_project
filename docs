@@ -1,0 +1,27 @@
+ Important notes
+
+    The script uses password_hash() for user passwords.
+
+    All generated users have the test password Password123!.
+
+    Customer IDs and category IDs are collected automatically and used when generating orders and products.
+
+    Images are placeholder paths. You need to create the corresponding image files if you want them to display.
+
+    The script adds records each time you run it. Because usernames and emails are unique, running it again may cause a duplicate-entry error. Use a fresh database or clear the test records first.
+
+My recommendation: Keep these two files separate:
+
+    script.php — creates all database tables.
+
+    populate.php — generates Faker data and inserts sample records.
+
+    nstall FakerPHP
+
+Open your project folder in the terminal and run:
+bash
+
+composer require fakerphp/faker
+
+This installs the Faker library.
+2. Create populate.php

@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Do not rewrite existing files or directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Convert /home to index.php?page=home
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ index.php?page=$1 [L,QSA]
