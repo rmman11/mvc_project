@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = ""; //here you can set a password for database
 $dbname = "learnphp";
 try {
   $db = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
